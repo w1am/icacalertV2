@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap');
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; 
+  background: white;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #222326;
+  padding: 0px;
+  margin: 0px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.side-a:visited {
+  color: #2d46b9;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #E1E4E8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 25px;
+  background-color: #F4F4F4;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: #C0C0C0;
+}
+
+input:focus {
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.13);
+  box-shadow: 0px 0px 28px 0px rgba(0,0,0,0.13);
+}
+
+button {
+  background-color: #2D46B9;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-weight: 700;
+  border: 1px solid #2D46B9;
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #1E3264;
+  border: 1px solid #1E3264;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #7289F3;
+  background-color: #7289F3;
+  color: #ffffff;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0px;
+  background: white;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  color: #636363;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: left;
+  padding: 18px 30px;
+}
+
+tr:first-child {
+  background-color: #EEEFF3;
+}
+
+@media screen and (max-width: 850px) {
+  input::placeholder {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd lib/server
+wget https://raw.githubusercontent.com/wilbat/dotfiles/master/mongoconf
+mv mongoconf .env

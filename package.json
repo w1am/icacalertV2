@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "client:dev": "yarn workspace client start",
+    "client:prod": "yarn workspace client build",
+    "server": "yarn workspace server start",
+    "dev": "concurrently \"yarn server\" \"yarn client:dev\"",
+    "start": "node lib/server/start.js",
+    "heroku-postbuild": "YARN_CONFIG_PRODUCTION=false yarn client:prod"
+  },
+  "engines": {
+    "node": "11.15.0",
+    "npm": "6.7.0"
+  },
+  "workspaces": {
+    "packages": [
+      "lib/*"
+    ]
+  },
+  "dependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
