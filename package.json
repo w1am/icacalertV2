@@ -9,8 +9,8 @@
     "heroku-postbuild": "YARN_CONFIG_PRODUCTION=false yarn client:prod"
   },
   "engines": {
-    "node": "11.15.0",
-    "npm": "6.7.0"
+    "node": "13.10.1",
+    "npm": "6.13.7"
   },
   "workspaces": {
     "packages": [
